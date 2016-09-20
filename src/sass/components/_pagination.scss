@@ -1,0 +1,44 @@
+.pager {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  text-align: center;
+
+  li {
+
+    margin: 0;
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: tint($gray-light, 30%);
+    }
+
+    a {
+      display: inline-block;
+      padding: 0rem 1rem;
+
+      &:hover {
+        background-color: $gray-lighter;
+        text-decoration: none;
+      }
+    }
+
+    &.pager--current {
+      background-color: $color-primary;
+
+      a {
+        color: #fff;
+        padding: 0 1rem;
+        margin-bottom: 0rem;
+        &:hover {
+          background-color: $color-primary;
+          padding: 0rem 1rem;
+        }
+      }
+    }
+  }
+}

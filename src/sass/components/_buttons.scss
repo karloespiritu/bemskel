@@ -1,0 +1,229 @@
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.btn,
+.button {
+  // text-transform: uppercase;
+  background-color: transparent;
+  border-radius: $global-radius;
+  border: 1px solid $border-color;
+  color: $color-secondary;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: 100;
+  height: 38px;
+  letter-spacing: .1rem;
+  line-height: 38px;
+  margin-bottom: 1rem;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 200ms;
+  white-space: nowrap;
+
+  // &:link,
+  // &:visited{
+  //   color: $white;
+  //   text-decoration: none;
+  // }
+
+  &:focus,
+  &:hover {
+    @include hover-style;
+  }
+
+  &:focus{
+    outline: .1rem dotted $gray;
+  }
+
+  &:active{
+    background-color: $color-primary;
+  }
+}
+
+// Basic Colors
+//
+.btn--primary {
+  color: $white;
+  background-color: $color-primary;
+  border-color: $color-primary;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: darken($color-primary, 10%);
+    border-color: $color-primary;
+  }
+}
+
+.btn--secondary {
+  color: $gray-lighter;
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+
+  &:focus,
+  &:hover {
+    color: $gray-lighter;
+    background-color: darken($color-secondary, 15%);
+    border-color: $color-secondary;
+  }
+}
+
+.btn--success {
+  background-color: $color-success;
+  border-color: $color-success;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: darken($color-success, 5%);
+    border-color: $color-success;
+  }
+}
+
+.btn--info {
+  background-color: $color-info;
+  border-color: $color-info;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: darken($color-info, 10%);
+    border-color: $color-info;
+  }
+}
+
+.btn--warning {
+  background-color: $color-warning;
+  border-color: $color-warning;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: darken($color-warning, 10%);
+    border-color: $color-warning;
+  }
+}
+
+.btn--danger {
+  background-color: $color-danger;
+  border-color: $color-danger;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: darken($color-danger, 10%);
+    border-color: $color-danger;
+  }
+}
+
+// Outline Style
+
+.btn-outline--primary {
+  background-color: transparent;
+  border-color: $color-primary;
+  color: $color-primary;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+
+.btn-outline--secondary {
+  background-color: transparent;
+  border-color: $color-secondary;
+  color: $color-secondary;
+
+  &:focus,
+  &:hover {
+    color: $gray-light;
+    background-color: $gray-darker;
+    border-color: $color-secondary;
+  }
+}
+
+
+.btn-outline--success {
+  background-color: transparent;
+  border-color: $color-success;
+  color: $color-success;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: $color-success !important;
+    border-color: $color-success;
+  }
+}
+
+.btn-outline--info {
+  background-color: transparent;
+  border-color: $color-info;
+  color: $color-info;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: $color-info;
+    border-color: $color-info;
+  }
+}
+
+.btn-outline--warning {
+  background-color: transparent;
+  border-color: $color-warning;
+  color: $color-warning;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: $color-warning;
+    border-color: $color-warning;
+  }
+}
+
+.btn-outline--danger {
+  background-color: transparent;
+  border-color: $color-danger;
+  color: $color-danger;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: $color-danger;
+    border-color: $color-danger;
+  }
+}
+
+
+// Large-Sized
+.btn--lg {
+  font-size: inherit;
+  font-weight: 100;
+  height: 5.8rem;
+  line-height: 5.8rem;
+  vertical-align: middle;
+  padding: 0 4rem;
+}
+
+// Raised Style
+.btn--raised {
+  border-width: 0;
+  border-bottom-width: 3px;
+  border-bottom-color: rgba(0,0,0,0.15);
+}
+
+[type="submit"],
+[type="reset"],
+[type="button"] {
+  @extend .btn;
+}
+
