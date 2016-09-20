@@ -1,0 +1,1112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BEMSkel - A Lightweight CSS Framework built using BEM and SASS</title>
+  <meta name="description" content="">
+  <meta name="author" content="Karlo Espiritu">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bemskel/bemskel.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <section class="project-header">
+    <div class="container">
+       <a href="/" class="project-header__title">BEMSkel</a>
+       <span class="project-header__description">A lightweight responsive CSS framework using BEM and SASS.
+      </span>
+      <div class="project-header__buttons">
+        <a class="btn btn--lg btn-outline--danger" href="https://github.com/karloespiritu/BEMSkel/releases/download/2.0.4/bemskel.zip" onClick="_gaq.push(['_trackEvent', 'bemskel', 'download'])">
+          <i class="fa fa-download fa-lg" aria-hidden="true"></i> Download
+        </a>
+        <a class="btn btn--lg btn-outline--secondary" href="https://github.com/karloespiritu/BEMSkel" onClick="_gaq.push(['_trackEvent', 'bemskel', 'download'])">
+          <i class="fa fa-github fa-lg" aria-hidden="true"></i> View in Github
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container container--lg">
+      <h2 class="features__title">Features</h2>
+        <div class="flex-grid flex-grid--lg">
+          <div class="flex-grid__col">
+            <h5>
+              <i class="fa fa-cubes" aria-hidden="true"></i>
+               BEM
+            </h5>
+            <p>
+             Written using <a href="https://en.bem.info/methodology/quick-start/">BEM (Block, Element, Modifier)</a> convention to make your front-end code easier to read and understand.
+            </p>
+          </div>
+          <div class="flex-grid__col">
+            <h5>
+              <i class="fa fa-sitemap" aria-hidden="true"></i>
+              SASS
+            </h5>
+            <p>
+              Uses <a href="https://sass-guidelin.es/#architecture">7-1 Architecture pattern</a> for maintainable and scalable SASS.
+            </p>
+          </div>
+          <div class="flex-grid__col">
+            <h5>
+              <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              Flexbox Grid
+            </h5>
+            <p>
+            Two ways of creating grids - CSS Grid and Flexbox.
+            </p>
+          </div>
+        </div>
+        <div class="flex-grid flex-grid--lg">
+          <div class="flex-grid__col">
+            <h5>
+              <i class="fa fa-send" aria-hidden="true"></i>
+               Lightweight
+            </h5>
+            <p>
+              Only includes the most important features to minimize code bloat.
+            </p>
+          </div>
+          <div class="flex-grid__col">
+            <h5>
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+              Gulp Build System
+            </h5>
+            <p>
+              Includes a Gulp build system to automate building of SASS files
+            </p>
+          </div>
+          <div class="flex-grid__col">
+            <h5>
+            <i class="fa fa-code-fork" aria-hidden="true"></i>
+             Easy To Extend
+            </h5>
+            <p>
+             Designed to be scalable and easy to customize. Use it as a standalone library or use it a starting point to build your next application.
+            </p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Main Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar--list">
+        <li class="navbar__item">
+            <a class="navbar--link" href="#intro">Intro</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar--link" href="#" data-popover="#layoutsNavPopover">Layouts</a>
+          <div id="layoutsNavPopover" class="popover">
+            <ul class="popover--list">
+              <li class="popover__item">
+                <a class="popover--link" href="#grid">Grid</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#grid-flex">Flexbox</a>
+              </li>
+          </div>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar--link" href="#" data-popover="#componentsNavPopover">Components</a>
+          <div id="componentsNavPopover" class="popover">
+            <ul class="popover--list">
+              <li class="popover__item">
+                <a class="popover--link" href="#typography">Typography</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#buttons">Buttons</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#forms">Forms</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#lists">Lists</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#code">Code</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#tables">Tables</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#pagination">Pagination</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#queries">Queries</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="#utilities">Utilities</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar__item"><a class="navbar--link" href="#examples">Built with BEMSkel</a></li>
+        <li class="navbar__item">
+          <a class="navbar--link" href="#" data-popover="#moreNavPopover">On Github</a>
+          <div id="moreNavPopover" class="popover">
+            <ul class="popover--list">
+              <li class="popover__item">
+                <a class="popover--link" href="https://github.com/karloespiritu/BEMSkel">On Github</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="https://github.com/karloespiritu/BEMSkel#browser-support">Browsers</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="https://github.com/karloespiritu/BEMSkel#license">License</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="https://github.com/karloespiritu/BEMSkel#extensions">Extensions</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="https://github.com/karloespiritu/BEMSkel/releases">Versions</a>
+              </li>
+              <li class="popover__item">
+                <a class="popover--link" href="https://github.com/karloespiritu/BEMSkel#colophon">Colophon</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content  -->
+  <div class="container">
+    <!-- Introduction -->
+    <div class="docs-section" id="intro">
+      <h2 class="docs-section__header">Introduction</h2>
+      <p>BEMSkel, or short for BEM Skeleton, is a lightweight CSS framework using BEM and SASS. It's designed to provide a solid foundation for building a component-based web applications and user interfaces. It is written using the <a href="https://en.bem.info/methodology/quick-start/">BEM (Block, Element, Modifier)</a> naming convention to provide a consistent and strict naming convention which allows you to divide your user interface into independent blocks and allow reuse of existing code.
+
+      <p>BEMSkel was initially based on <a href="http://getskeleton.com">Skeleton</a> boilerplate but was rewritten using BEM and added with useful features for building component-based user interfaces. It provides styles for the most commonly used elements such as text, buttons, tables, and forms. It also includes two ways of creating grid systems -- <b>grid</b> and <b>flexbox</b>. As a simple rule, use grid if you need to support older browsers or <b>flexbox</b> if you only want to support modern browsers.</p>
+
+      <p>If you like BEMSkel, feel free to share it, tweet it, or start using it.  <3</p>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskelly.com" data-text="BEMSkel - A dead simple, responsive boilerplate." data-via="karloespiritu" data-related="karloespiritu">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <iframe src="http://ghbtns.com/github-btn.html?user=karloespiritu&repo=bemskel&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=karloespiritu&repo=bemskel&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    </div>
+
+    <!-- GRID -->
+    <div class="docs-section" id="grid">
+      <!-- Grid -->
+      <h2 class="docs-section__header">Grid</h2>
+      <p>The grid is a <u>12-column fluid grid with a maximum width of 1000px</u>, that shrinks with the browser device at smaller sizes. The maximum width can be changed with one line of CSS in the <code>_variables.scss</code> file and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Use the grid layout if you need support for older browsers such as IE9 and below</p>
+
+      <div class="demo-grid docs-sample">
+        <div class="row">
+          <div class="col col--2">col--2</div>
+          <div class="col col--10">col--10</div>
+        </div>
+        <div class="row">
+          <div class="col col--3">col--3</div>
+          <div class="col col--9">col--9</div>
+        </div>
+        <div >
+          <div class="col col--4">col--4</div>
+          <div class="col col--8">col--8</div>
+        </div>
+        <div class="row">
+          <div class="col col--5">col--5</div>
+          <div class="col col--7">col--7</div>
+        </div>
+        <div class="row">
+          <div class="col col--6">col--6</div>
+          <div class="col col--6">col--6</div>
+        </div>
+        <div class="row">
+          <div class="col col--7">col--7</div>
+          <div class="col col--5">col--5</div>
+        </div>
+        <div class="row">
+          <div class="col col--8">col--8</div>
+          <div class="col col--4">col--4</div>
+        </div>
+        <div class="row">
+          <div class="col col--9">col--9</div>
+          <div class="col col--3">col--3</div>
+        </div>
+        <div class="row">
+          <div class="col col--10">col--10</div>
+          <div class="col col--2">col--2</div>
+        </div>
+        <div class="row">
+          <div class="col col--11">col--11</div>
+          <div class="col col--1">col--1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GRID CODE EXAMPLE -->
+  <section class="code-section">
+    <div class="container">
+        <pre class="code-sample">
+          <code class="code-sample__body prettyprint">
+          <!-- .container is main centered wrapper -->
+          <div class="container">
+
+            <!-- columns must be the immediate child of a .row -->
+             <div class="row">
+              <div class="col col--2">col--2</div>
+              <div class="col col--10">col--10</div>
+            </div>
+
+            <!-- just use the class 'col' and 'col--n', where n is the number of columns -->
+            <div class="row">
+              <div class="col col--3">col--3</div>
+              <div class="col col--9">col--9</div>
+            </div>
+
+            <!-- there are a few shorthand columns widths as well -->
+            <div class="row">
+              <div class="col col--1-3">1/3</div>
+              <div class="col col--2-3">2/3</div>
+            </div>
+            <div class="row">
+              <div class="col--1-2 col">1/2</div>
+              <div class="col--1-2 col">1/2</div>
+            </div>
+
+          </div>
+
+          <!-- Note: columns can be nested, but it's not recommended since BEMSkel's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+          </code>
+        </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="docs-section" id="grid-flex">
+      <h2 class="docs-section__header">Flexbox Grid</h2>
+      <p>Use flexbox grid if you only want to support modern browsers. In this kind of layout, the width of the columns are implicit, so columns will adjust automatically to be equal width to their adjacent columns.</p>
+      <div class="demo-grid">
+        <div class="flex-grid">
+          <div class="flex-grid__col">Auto</div>
+          <div class="flex-grid__col">Auto</div>
+          <div class="flex-grid__col">Auto</div>
+          <div class="flex-grid__col">Auto</div>
+        </div>
+        <div class="flex-grid flex-grid--md">
+          <div class="flex-grid__col flex-grid__col--sm">flex-grow: 2</div>
+          <div class="flex-grid__col">flex-grow: 4</div>
+        </div>
+        <div class="flex-grid flex-grid--md">
+          <div class="flex-grid__col flex-grid__col--fixed-width">fixed-width: 200px</div>
+          <div class="flex-grid__col">flex-grow: 4</div>
+        </div>
+        <div class="flex-grid flex-grid--lg">
+          <div class="flex-grid__col flex-grid__col--lg">flex-grow: large</div>
+          <div class="flex-grid__col">flex-grow: default</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FLEX GRID CODE EXAMPLE -->
+  <section class="code-section">
+    <div class="container">
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint">
+          <!-- .container is main centered wrapper -->
+          <div class="container">
+            <!--  Defining a .flex-grid__col should always be wrapped by .flex-grid -->
+            <div class="flex-grid">
+              <div class="flex-grid__col">Auto</div>
+              <div class="flex-grid__col">Auto</div>
+              <div class="flex-grid__col">Auto</div>
+              <div class="flex-grid__col">Auto</div>
+            </div>
+            <!-- .flex-grid__col--sm will create a column half the width of its adjacent columns -->
+            <div class="flex-grid flex-grid--md">
+              <div class="flex-grid__col flex-grid__col--sm">flex-grow: 2</div>
+              <div class="flex-grid__col">flex-grow: 4</div>
+            </div>
+            <!-- .flex-grid__col--fixed-width will create a column fixed at 200px. Adjust the default fixed width in _variables.scss -->
+            <div class="flex-grid flex-grid--md">
+              <div class="flex-grid__col flex-grid__col--fixed-width">fixed-width: 200px</div>
+              <div class="flex-grid__col">flex-grow: 4</div>
+            </div>
+            <!-- .flex-grid__col--lg will create a column twice the width of the default columns -->
+            <div class="flex-grid flex-grid--lg">
+              <div class="flex-grid__col flex-grid__col--lg">flex-grow: large</div>
+              <div class="flex-grid__col">flex-grow: default</div>
+            </div>
+          </div>
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Typography -->
+    <div class="docs-section" id="typography">
+      <h2 class="docs-section__header">Typography</h2>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, BEMSkel never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+      <div class="docs-sample">
+        <div class="row">
+          <div class="col col--6">
+            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Roboto">Roboto</a> served by Google, set at 1.6rem (16px) over a 2.4rem line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+            <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+          </div>
+          <div class="col col--6">
+            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+            <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY CODE EXAMPLE -->
+  <section class="code-section">
+    <div class="container">
+
+      <!-- TYPOGRAPHY Code sample -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint"><!-- Standard Headings -->
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <h5>Heading</h5>
+        <h6>Heading</h6>
+
+        <!-- Base type size -->
+        <p>The base type is 16px over 2.4 line height (24px)</p>
+
+        <!-- Other styled text tags -->
+        <strong>Bolded</strong>
+        <em>Italicized</em>
+        <a>Colored</a>
+        <u>Underlined</u>
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Buttons -->
+    <div class="docs-section" id="buttons">
+      <h2 class="docs-section__header">Buttons</h2>
+      <p>Different button styles are included in BEMSKEL -- classic, outline, raised, and large. Classic button styles are patterned after <a href="http://getbootstrap.com">Bootstrap</a>, which has 5 different color styles -- primary, secondary, info, warning, and danger.  Button styles are also applied to a number of appropriate form elements but can also be applied to anchors with a <code>.btn</code> class.</p>
+      <div class="docs-sample">
+        <h5>Button Class</h5>
+        <div>
+          <a class="btn" href="#">Anchor</a>
+          <button class="btn">Button Element</button>
+          <input class="btn" type="button" value="Button input">
+          <input class="btn" type="submit" value="Submit input">
+          <input class="btn" type="reset" value="Reset input">
+        </div>
+        <h5>Classic Styles</h5>
+        <div>
+          <a class="btn btn--primary" href="#">Primary</a>
+          <button class="btn btn--secondary">Secondary</button>
+          <input class="btn btn--success" type="submit" value="Success">
+          <input class="btn btn--info" type="button" value="Info">
+          <input class="btn btn--warning" type="button" value="Warning">
+          <input class="btn btn--danger" type="reset" value="Danger">
+        </div>
+        <h5>Large Buttons</h5>
+        <div>
+          <a class="btn btn--primary btn--lg" href="#">Large Primary</a>
+          <button class="btn btn-outline--secondary btn--lg">Large Outline</button>
+          <button class="btn btn--success btn--raised btn--lg">Large Raised</button>
+        </div>
+        <h5>Outline Buttons</h5>
+        <div>
+          <a class="btn btn-outline--primary" href="#"> Primary</a>
+          <a class="btn btn-outline--secondary" href="#">Secondary</a>
+          <button class="btn btn-outline--success">Success</button>
+          <button class="btn btn-outline--info">Info</button>
+          <input class="btn btn-outline--warning" type="submit" value="Warning">
+          <input class="btn btn-outline--danger" type="button" value="Danger">
+        </div>
+        <h5>Raised Buttons</h5>
+        <div>
+          <a class="btn btn--primary btn--raised" href="#">Primary</a>
+          <button class="btn btn--secondary btn--raised">Secondary</button>
+          <input class="btn btn--success btn--raised" type="submit" value="Success">
+          <input class="btn btn--info btn--raised" type="button" value="Info">
+          <input class="btn btn--warning btn--raised" type="button" value="Warning">
+          <input class="btn btn--danger btn--raised" type="reset" value="Danger">
+        </div>
+        <h5>Buttons with Icons</h5>
+        <p>BEMSkel does not include an icon font, but works nicely with popular ones such as <a href="http://fontawesome.io/icons/">FontAwesome</a>. You can use the <strong>i</strong> to include an icon inside buttons.</p>
+        <div>
+          <button class="btn btn--primary btn--raised">
+            <i class="fa fa-download"></i>
+            Primary
+          </button>
+          <button class="btn btn--danger">
+            <i class="fa fa-instagram"></i>
+            Secondary
+          </button>
+          <button class="btn btn--info btn--raised btn--lg">
+            <i class="fa fa-twitter"></i>
+            Raised
+          </button>
+          <button class="btn btn--lg btn-outline--danger">
+            <i class="fa fa-spinner fa-spin"></i>
+            Secondary
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <!-- BUTTON CODE EXAMPLE -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint">
+          <!-- Button Class -->
+          <a class="btn" href="#">Anchor</a>
+          <button class="btn">Button Element</button>
+          <input class="btn" type="button" value="Button input">
+          <input class="btn" type="submit" value="Submit input">
+          <input class="btn" type="reset" value="Reset input">
+
+          <!-- Classic Styles -->
+          <a class="btn btn--primary" href="#">Primary</a>
+          <button class="btn btn--secondary">Secondary</button>
+          <input class="btn btn--success" type="submit" value="Success">
+          <input class="btn btn--info" type="button" value="Info">
+          <input class="btn btn--warning" type="button" value="Warning">
+          <input class="btn btn--danger" type="reset" value="Danger">
+
+          <!-- Large Buttons -->
+          <a class="btn btn--primary btn--lg" href="#">Large Primary</a>
+          <button class="btn btn-outline--secondary btn--lg">Large Outline</button>
+          <button class="btn btn--success btn--raised btn--lg">Large Raised</button>
+
+          <!-- Outline Buttons -->
+          <a class="btn btn-outline--primary" href="#"> Primary</a>
+          <a class="btn btn-outline--secondary" href="#">Secondary</a>
+          <button class="btn btn-outline--success">Success</button>
+          <button class="btn btn-outline--info">Info</button>
+          <input class="btn btn-outline--warning" type="submit" value="Warning">
+          <input class="btn btn-outline--danger" type="button" value="Danger">
+
+          <!--Raised Buttons -->
+          <a class="btn btn--primary btn--raised" href="#">Primary</a>
+          <button class="btn btn--secondary btn--raised">Secondary</button>
+          <input class="btn btn--success btn--raised" type="submit" value="Success">
+          <input class="btn btn--info btn--raised" type="button" value="Info">
+          <input class="btn btn--warning btn--raised" type="button" value="Warning">
+          <input class="btn btn--danger btn--raised" type="reset" value="Danger">
+
+        </code>
+      </pre>
+      <!-- End Button Code Example -->
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Forms -->
+    <div class="docs-section" id="forms">
+      <h2 class="docs-section__header">Forms</h2>
+      <p>Basic form styles are included to help building forms easier.</p>
+      <div class="docs-sample">
+        <form>
+          <div class="row">
+            <div class="col col--6">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mydomain.com" id="exampleEmailInput">
+            </div>
+            <div class="col col--6">
+              <label for="exampleRecipientInput">Reason for Contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Inquiry</option>
+                <option value="Option 2">Thanks</option>
+                <option value="Option 3">Issues</option>
+              </select>
+            </div>
+          </div>
+          <label class="radio">
+            <input type="radio" name="example">
+            <span class="radio__label label-body">Option 1</span>
+            <input type="radio" name="example">
+            <span class="radio__label label-body">Option 2</span>
+          </label>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Karlo &hellip;" id="exampleMessage"></textarea>
+          <label class="sample__send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="btn btn--primary" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <!-- FORMS CODE EXAMPLE -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint"><!-- The above form looks like this -->
+        <form>
+          <div class="row">
+            <div class="col col--6">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="col col--6">
+              <label for="exampleRecipientInput">Reason for Contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Inquiry</option>
+                <option value="Option 2">Thanks</option>
+                <option value="Option 3">Issues</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Karlo &hellip;" id="exampleMessage"></textarea>
+          <label class="sample__send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="btn btn--primary" type="submit" value="Submit">
+        </form>
+
+        <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+        <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Lists -->
+    <div class="docs-section" id="lists">
+      <h2 class="docs-section__header">Lists</h2>
+      <div class="row docs-sample">
+        <div class="col col--6">
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items</li>
+          </ul>
+        </div>
+        <div class="col col--6">
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item just for the fun</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <!-- LISTS CODE EXAMPLE -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint">
+          <!-- Unordered Lists -->
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items</li>
+          </ul>
+          <!-- Ordered Lists -->
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item just for the fun</li>
+          </ol>
+          <!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. BEMSkel doesn't support lists nested deeper than 2 levels -->
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Code -->
+    <div class="docs-section" id="code">
+      <h2 class="docs-section__header">Code</h2>
+      <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
+      <div class="docs-sample">
+        <pre>
+          <code>.some-class {
+          background-color: red;
+        }
+          </code>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <!-- 'CODE' CODE EXAMPLE -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint"><pre><code>.some-class {
+          background-color: red;
+        }</code></pre>
+
+        <!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Tables -->
+    <div class="docs-section" id="tables">
+      <div class="container--md">
+        <h2 class="docs-section__header">Tables</h2>
+        <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+        <div class="docs-sample">
+          <div class="row">
+            <div class="col col--6">
+              <h6>Default</h6>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11</td>
+                    <td>Lemmy</td>
+                    <td>Kilmister</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Jeff </td>
+                    <td>Hanneman</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Jimi</td>
+                    <td>Hendrix</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col col--6">
+              <h6>Bordered</h6>
+              <table class="table table--bordered">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11</td>
+                    <td>Lemmy</td>
+                    <td>Kilmister</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Jeff </td>
+                    <td>Hanneman</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Jimi</td>
+                    <td>Hendrix</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col--6">
+              <h6>Striped</h6>
+              <table class="table table--striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11</td>
+                    <td>Lemmy</td>
+                    <td>Kilmister</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Jeff </td>
+                    <td>Hanneman</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Jimi</td>
+                    <td>Hendrix</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col col--6">
+              <h6>Hover</h6>
+              <table class="table table--hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11</td>
+                    <td>Lemmy</td>
+                    <td>Kilmister</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Jeff </td>
+                    <td>Hanneman</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Jimi</td>
+                    <td>Hendrix</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col--6">
+              <h6>Compact</h6>
+              <table class="table table--compact">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11</td>
+                    <td>Lemmy</td>
+                    <td>Kilmister</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Jeff </td>
+                    <td>Hanneman</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Jimi</td>
+                    <td>Hendrix</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col col--6">
+              <h6>Responsive (scrolls horizonatally on smaller screens)</h6>
+              <!-- Responsive tables  (must be wrapped by .table-responsive class) -->
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Band</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>11</td>
+                      <td>Lemmy</td>
+                      <td>Kilmister</td>
+                      <td>Motorhead</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Jeff </td>
+                      <td>Hanneman</td>
+                      <td>Slayer</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Jim</td>
+                      <td>Morrison</td>
+                      <td>The Doors</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <!-- Tables Code Sample -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint">
+        <!-- Default Table -->
+        <table class="table">
+          <!-- Table markup goes here -->
+        </table>
+        <!--
+        Tables Styles: Use any of the following table modifier classes:
+           .table--bordered
+           .table--striped
+           .table--hover
+           .table--compact
+        -->
+        <table class="table {.table--modifier-class}">
+            <!-- Table markup goes here -->
+        </table>
+
+        <!-- Responsive tables (must be wrapped by .table-responsive class) -->
+        <div class="table-responsive">
+          <table class="table">
+            <!-- Table markup goes here -->
+          </table>
+        </div>
+        </code>
+      </pre>
+      <!-- End Code Sample -->
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Pagination -->
+    <div class="docs-section" id="pagination">
+      <h2 class="docs-section__header">Pagination</h2>
+      <p>The <a href="#">pagination</a> component provides default styling for pagination that contains long content and requires splitting content into shorter, easier to understand blocks.
+      </p>
+        <nav aria-label="Page Navigation">
+          <ul class="pager">
+              <li><a href="#">&lt;</a></li>
+              <li class="pager--current"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">&gt;</a></li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+        <!-- PAGINATION CODE EXAMPLE -->
+        <pre class="code-sample">
+          <code class="code-sample__body prettyprint">
+            <nav aria-label="Page Navigation">
+              <ul class="pager">
+                  <li><a href="#">&lt;</a></li>
+                  <li class="pager--current"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+            </nav>
+          </code>
+        </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Queries -->
+    <div class="docs-section" id="queries">
+      <h2 class="docs-section__header">Media queries</h2>
+      <p>BEMSkel uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how BEMSkel's grid is built and is the preferable method of organizing CSS. It means <u>all styles outside of a media query apply to all devices</u>, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+      <div class="docs-sample row">
+        <div class="col col--6">
+          <ul>
+            <li><strong>Desktop HD</strong>: 1200px</li>
+            <li><strong>Desktop</strong>: 1000px</li>
+            <li><strong>Tablet</strong>: 750px</li>
+          </ul>
+        </div>
+        <div class="col col--6">
+          <ul>
+            <li><strong>Phablet</strong>: 550px</li>
+            <li><strong>Mobile</strong>: 400px</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint">
+        /* Mobile first queries */
+
+        /* Larger than mobile */
+        @media (min-width: 400px) {}
+
+        /* Larger than phablet */
+        @media (min-width: 550px) {}
+
+        /* Larger than tablet */
+        @media (min-width: 750px) {}
+
+        /* Larger than desktop */
+        @media (min-width: 1000px) {}
+
+        /* Larger than Desktop HD */
+        @media (min-width: 1200px) {}
+
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Utilities and Misc. -->
+    <div class="docs-section" id="utilities">
+      <h2 class="docs-section__header">Utilities</h2>
+      <p>BEMSkel has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+    </div>
+  </div>
+
+  <section class="code-section">
+    <div class="container">
+      <!-- UTILITIES CODE EXAMPLE -->
+      <pre class="code-sample">
+        <code class="code-sample__body prettyprint">/* Utility Classes */
+
+        /* Make element full width */
+        .u-full-width {
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        /* Make sure elements don't run outside containers (great for images in columns) */
+        .u-max-full-width {
+          max-width: 100%;
+          box-sizing: border-box;
+        }
+
+        /* Float either direction */
+        .u-pull--right {
+          float: right;
+        }
+        .u-pull--left {
+          float: left;
+        }
+
+        /* Clear a float */
+        .u-clearfix {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="built-with">
+    <div class="container">
+      <!-- Built with BEMSkel -->
+      <div class="docs-section examples" id="examples">
+        <h2 class="docs-section__header">Built with BEMSkel</h2>
+        <div class="row sample">
+          <div class="col col--12">
+            <h4>Landing Page</h4>
+            <p class="sample__description">This simple template is an example of how easy it can be to create a landing page using the BEMSkel grid and a few custom styles. The entire demo is ~170 lines of CSS including comments.</p>
+            <div class="sample__screenshot-container">
+               <a target="_blank" href="examples/landing">
+                <img src="images/landing-screenshot.jpg">
+              </a>
+            </div>
+            <div class="built-with__links">
+              <a class="btn btn--success btn--raised" href="examples/landing" target="_blank">Demo</a>
+              <a class="btn btn--secondary btn--raised" href="https://github.com/karloespiritu/bemskel/docs/examples/landing" target="_blank">Source</a>
+            </div>
+          </div>
+        </div>
+        <div class="row coming-soon">
+          <h3 class="coming-soon__title">React Examples Coming Soon</h3>
+          <p class="coming-soon__description">Examples using BEMSkel with React will be added soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+        <p>© 2016 BEMSkel. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="https://github.com/karloespiritu/bemskel">Github Project Page</a>
+            </li>
+        </ul>
+    </div>
+  </footer>
+  <!-- End Document  -->
+
+  <!-- Scripts -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+</body>
+</html>
