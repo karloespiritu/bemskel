@@ -23,6 +23,16 @@ consistent and strict to easily extend the framework.
 $ git clone git@github.com:karloespiritu/bemskel.git
 ```
 
+## Browser support
+
+- Chrome latest
+- Firefox latest
+- Opera latest
+- Safari latest
+- IE latest
+
+BEMSkel works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
+
 
 ## Credits
 
