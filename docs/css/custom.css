@@ -330,6 +330,7 @@ footer p {
     color: #fff;
     display: block;
     height: 4.5rem;
+    padding-left: 1rem;
     width: 100%;
     z-index: 9999;
   }
@@ -447,7 +448,7 @@ footer p {
     font-size: 1.0rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    padding: 8px 32px;
+    padding: 8px 20px;
     position: relative;
     text-align: center;
     text-decoration: none;

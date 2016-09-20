@@ -1,9 +1,8 @@
 # BEMSkel
 
-BEMSkel is a lightweight responsive CSS framework using BEM and SASS which includes the
-best practices and important UI components that I use on every web and React projects.
+BEMSkel is a a lightweight CSS framework written in BEM and SASS for building scalable component-based user interfaces. It includes commonly used UI components that I use on every web and React projects.
 
-BEMSkel is designed to be a starting point. A solid foundation for your project, leaving the creativity up to you.
+BEMSkel can be used as standalone CSS library or a starting point project. It's lightweight, minimal, and well-documented, leaving the creativity up to you.
 
 - Minified production versions: [`dist/`](dist/)
 - Unminified sources: [`src/`](src/)
@@ -21,6 +20,14 @@ consistent and strict to easily extend the framework.
 
 ```
 $ git clone git@github.com:karloespiritu/bemskel.git
+```
+
+## Customize
+
+```
+$ npm install
+// customize the SASS files in /src
+$ gulp watch
 ```
 
 ## Browser support
