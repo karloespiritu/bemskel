@@ -82,6 +82,12 @@
 /* About */
 .about {
   background-image: url("../images/grass.jpg");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   color: #333;
 }
 
