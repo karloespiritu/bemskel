@@ -25,7 +25,7 @@
 
 /* Hero */
 .hero {
-  background: url("../images/overlay.png"), url('../images/dandelion.jpg');
+  background: url("../images/overlay.png"), url("../images/dandelion.jpg");
   background-size: auto, cover;
   background-attachment: fixed;
   background-position: top left, center center;
@@ -79,7 +79,7 @@
 
 /* About */
 .about {
-  background-image: url("../images/overlay.png"), url('../images/grass.jpg');
+  background-image: url("../images/overlay.png"), url("../images/grass.jpg");
   background-size: auto, cover;
   background-attachment: fixed;
   background-position: top left, center center;
