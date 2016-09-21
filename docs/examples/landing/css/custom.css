@@ -25,11 +25,15 @@
 
 /* Hero */
 .hero {
-  background: url("../images/overlay.png"), url("../images/dandelion.jpg");
+  background-image: url("../images/overlay.png"), url("../images/dandelion.jpg");
   background-size: auto, cover;
   background-attachment: fixed;
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #111;
 }
 
@@ -47,7 +51,7 @@
 
 /* Promotion */
 .promotion {
-   background: linear-gradient(rgba(25, 32, 35, 0.85), rgba(0, 119, 76, 0.75) ), url("../images/aurora.jpg");
+  background: linear-gradient(rgba(25, 32, 35, 0.85), rgba(0, 119, 76, 0.75) ), url("../images/aurora.jpg");
   background-size: cover;
   color: #fff;
   padding: 6rem 0 6rem;
@@ -84,6 +88,10 @@
   background-attachment: fixed;
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #333;
 }
 
