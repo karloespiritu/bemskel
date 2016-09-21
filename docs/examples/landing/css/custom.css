@@ -7,9 +7,9 @@
 }
 
 .list-inline > li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 /* Sections */
@@ -25,16 +25,14 @@
 
 /* Hero */
 .hero {
-  background-image: url("../images/overlay.png"), url("../images/dandelion.jpg");
-  background-size: auto, cover;
-  /*background-attachment: fixed;*/
-  background-position: top left, center center;
-  background-repeat: repeat, no-repeat;
+  background-image: url("../images/bokeh.jpg");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
   webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  color: #111;
+  color: #222;
 }
 
 /* Features */
@@ -83,15 +81,7 @@
 
 /* About */
 .about {
-  background-image: url("../images/overlay.png"), url("../images/grass.jpg");
-  background-size: auto, cover;
-  background-attachment: fixed;
-  background-position: top left, center center;
-  background-repeat: repeat, no-repeat;
-  webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url("../images/grass.jpg");
   color: #333;
 }
 
