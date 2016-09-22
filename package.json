@@ -1,8 +1,7 @@
 {
   "name": "bemskel",
   "version": "1.0.0",
-  "description": "A Lightweight CSS Framework written BEM and SASS for building
-  scalable component-based user interfaces",
+  "description": "A Lightweight CSS Framework written BEM and SASS for building scalable component-based user interfaces",
   "main": "index.js",
   "dependencies": {
     "normalise.scss": "^1.0.0"
