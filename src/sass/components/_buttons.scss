@@ -3,7 +3,6 @@
 
 .btn,
 .button {
-  // text-transform: uppercase;
   background-color: transparent;
   border-radius: $global-radius;
   border: 1px solid $border-color;
@@ -21,12 +20,6 @@
   text-decoration: none;
   transition-duration: 200ms;
   white-space: nowrap;
-
-  // &:link,
-  // &:visited{
-  //   color: $white;
-  //   text-decoration: none;
-  // }
 
   &:focus,
   &:hover {
